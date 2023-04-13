@@ -14,3 +14,17 @@ let num = 10
 for (let i = 0 ; i < num ; i++){
     console.log(` el numero iterado es ${i}`)
 }
+
+let nun1 = 1
+for (let i = 10 ; i > nun1; i--){
+    console.log(i)
+}
+
+
+for (let j = 1;j < 20 ; j++){
+    if(j % 2 == 0){
+        console.log(j)
+    }
+}
+        
+
