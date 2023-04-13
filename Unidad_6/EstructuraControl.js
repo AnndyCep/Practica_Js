@@ -15,12 +15,13 @@ for (let i = 0 ; i < num ; i++){
     console.log(` el numero iterado es ${i}`)
 }
 
+// me permite iterar de mayor a menor
 let nun1 = 1
 for (let i = 10 ; i > nun1; i--){
     console.log(i)
 }
 
-
+// Menciona los numeros pares dentro de una conjunto de numeros
 for (let j = 1;j < 20 ; j++){
     if(j % 2 == 0){
         console.log(j)
