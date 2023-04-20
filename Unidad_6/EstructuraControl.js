@@ -28,4 +28,10 @@ for (let j = 1;j < 20 ; j++){
     }
 }
         
+suma = 0
+for (let i = 1 ; i <= 5 ; i ++){
+    suma += 1
+    console.log(suma)
+}
+
 
