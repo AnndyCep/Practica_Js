@@ -14,7 +14,7 @@ class Persona{
         this.nacionalidad = null
     }
 
-    get getNombre() {
+         get getNombre() {
             return this.nombre;
         }
         get getApellido() {
@@ -43,15 +43,17 @@ class Persona{
             this.nacionalidad = nacionalidad;
         }
 
-    static mensaje(){
-        return `Hay 8.010.359.063 personas en el mundo`
-    }
+        mensaje(){
+            let text = (`Hay 8.010.359.063 personas en el mundo`)
+            return text
+            
+        }
 }
-let Andres = new Persona("Andres","Cepeda", 26 ,"Colombiana");
-Andres.setNacionalidad = "Colombiana"
+    const Andres = new Persona("Andres","Cepeda", 26 ,"Colombiana");
+    Andres.setNacionalidad = "Colombiana"
 
-console.log(Andres.getNacionalidad)
-//Andres.mensaje();
+    console.log(Andres.getNacionalidad)
+    console.log(Andres.mensaje())
 
 
 
