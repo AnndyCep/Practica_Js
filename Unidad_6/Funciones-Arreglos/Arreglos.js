@@ -29,5 +29,26 @@ var peluclas = [" La milla verde", "Paracitos", "El viaje de Chihuro", "Coco", "
 for (let index = 0; index < peluclas.length; index++) {
     console.log(` la pelicula ${index+1} :es ${peluclas[index]}`)    
 }
- // con foreach
- peluclas.forEach((e , index) => console.log(`peliculas :${index} ${e}`))
+ 
+/*
+•Eliminar un elemento. Para eliminar solo un elemento al final del arreglo
+utilizamos el método pop(), para eliminar el primer elemento de un arreglo
+utilizamos el método shift().
+
+*/
+console.log(coches)
+coches.pop()
+console.log(coches)
+coches.shift()
+console.log(coches)
+coches.push("Chevrelet")
+console.log(coches)
+
+/**
+ * Copiar un arreglo. Para clonar todo un arreglo podemos usar el método slice().
+    Como se ve en el siguiente ejemplo.
+ * 
+ */
+
+let copiaArreglo = coches.slice();
+console.log(copiaArreglo)
