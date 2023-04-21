@@ -9,20 +9,35 @@
 
     console.log(lista)
 
-    let  nuevo = [7,8,3]
-    let mayor = nuevo[0]
-    let menor = null
-    let medio = null
+ /////
 
-    for (let index = 1; index < nuevo.length; index++) {
-        if(nuevo[index] > mayor){
-            medio = mayor
-            mayor = nuevo[index]
-        }if (nuevo[index] < mayor) {
-            menor = nuevo[index]
-        }if (menor > medio){
-            menor = medio
+    function ordenarArreglo(arr) {
+
+        let n = arr.length; //3
+
+        for(let i = 0; i < n; i++) { //1
+          for(let j = 0; j < n - i - 1; j++) { // j = 2 < n = 2 true
+                   //6 > 2  true
+            if(arr[j] > arr[j + 1]) {
+                    //6     
+              let temp = arr[j];
+                //2       
+              arr[j] = arr[j + 1];
+                    //6
+              arr[j + 1] = temp;
+              
+            }
+          }
         }
-        
-    }
+        return arr;
+      }
+                    //0 - 1 - 2    
+      let numeros = [10, 6, 2,3,4,5,3,3];
+      let numerosOrdenados = ordenarArreglo(numeros);
+      
+      console.log(numerosOrdenados);
+
+
+
     
+
