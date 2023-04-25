@@ -8,18 +8,34 @@
  * 
  */
 
-    function suma(a,b){
-        
-        try {
-            let suma = (a + b)
-            return suma 
-        } catch (error) {
-             console.log("¡Cuidado! No se reciben datos no numéricos.")
-        } finally{
-            console.log("Análisis de datos terminado.")
-        }
-        
-     }
+     try {
+        let suma = 5 +5  // Se gestiona la suma y se guarda dentro de la variable
+        console.log(`la suma es ${resultado}`) // Resultado no esta definido, por eso salta el error
 
-     let restas = suma(1,3)
-     console.log(restas)
+     } catch (e) { // Se captura el error para tratar, e interactuar como es posiblo solucionarlo
+        console.log("Se produjo un error, referencia" + e)
+     } 
+
+
+     //isNaN(Parametro) determina si el parametro enviado No es un numero,
+     // Ejemplo
+     /**
+      * let numeroUsuario = 1
+      * if (isNaN(numeroUsuario) || numeroUsuario < 1 || numeroUsuarui > 9 ){
+      *     Is true se realiza las condiion a determinar
+      * }
+      */
+
+     try{
+        let numeroUsuario = "a"
+     
+        if (isNaN(numeroUsuario) || numeroUsuario < 1 || numeroUsuario > 9)  {
+            throw new Error(" Numero que ingresas no valido")
+        }else{
+            console.log("Sin errores")
+        }
+    } catch(e) {
+        console.log("Se produjo un error, Referencias: "+e)
+     }
+    
+     
