@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Encriptacion de Texto </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+</head>
+<scr>
+    <div id="container">
+        <h1> Challenge Cifrado :) </h1>
+        <div id="input-area">
+          <textarea id="input-text" placeholder="Ingrese el texto aquí (solo letras minúsculas y sin acentos)"></textarea>
+        </div>
+        <div id="button-area">
+          <button onclick="tomarValoresEncriptar();" id="encrypt-button">Encriptar</button>
+          <button onclick="tomarValoresDesencriptar()" id="decrypt-button">Desencriptar</button>
+        </div>
+        <div id="output-area">
+          <textarea id="output-text" placeholder="Salida"></textarea>
+        </div>
+      </div>
+
+    <script src="app.js" defer></script>
+</body>
+</html>
